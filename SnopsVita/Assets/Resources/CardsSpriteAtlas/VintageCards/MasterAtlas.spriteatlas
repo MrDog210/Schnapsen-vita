@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MasterAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 9c2fee61db9cf9c45a190e8bb1dda622, type: 3}
+    - {fileID: 2800000, guid: d5b968d2fb6edc743af291ebc7915688, type: 3}
+    - {fileID: 2800000, guid: f5c74721655d4e948a37c92b89359f82, type: 3}
+    - {fileID: 2800000, guid: 6eef4c19f8023bb4f8e21bc126b0ec51, type: 3}
+    - {fileID: 2800000, guid: 5833c19fc6592e9409a9aa49fce22aac, type: 3}
+    - {fileID: 2800000, guid: 3fad63587a256344b953be02977548e5, type: 3}
+    - {fileID: 2800000, guid: 4232d284295fce849b937bf962b84bee, type: 3}
+    - {fileID: 2800000, guid: 52f0b0df4abe9df468f11e33e853eb78, type: 3}
+    - {fileID: 2800000, guid: d97644badf536834fb3967d8068479d6, type: 3}
+    - {fileID: 2800000, guid: b624937a9dee9934197587bfc4bfdda6, type: 3}
+    - {fileID: 2800000, guid: 28aed0548aaec6b48b6dfdaa7730ba91, type: 3}
+    - {fileID: 2800000, guid: dc2dc399fc15bdd4399f43628b051013, type: 3}
+    - {fileID: 2800000, guid: 2b567399c84ee4044898c4ecc9bbf920, type: 3}
+    - {fileID: 2800000, guid: f582c183f4af88740a8fea76d439aae9, type: 3}
+    - {fileID: 2800000, guid: 0ce2b3a95a3962648bb8dcc76f6ecfb5, type: 3}
+    - {fileID: 2800000, guid: 38213c4366f57734e99f4582dd701863, type: 3}
+    - {fileID: 2800000, guid: 5fc50ced685d0cd44a1ca677c8b51484, type: 3}
+    - {fileID: 2800000, guid: 9fb57ebd9a70399439f75a8820ea28d9, type: 3}
+    - {fileID: 2800000, guid: 1fc2cafb3ee04b94c8566364924a7623, type: 3}
+    - {fileID: 2800000, guid: a6133d4805a93cf498df7b951fe3bb4d, type: 3}
+    - {fileID: 2800000, guid: 452a8370e4509ca45b9d7eb28d4a099a, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 452a8370e4509ca45b9d7eb28d4a099a, type: 3}
+  - {fileID: 21300000, guid: f5c74721655d4e948a37c92b89359f82, type: 3}
+  - {fileID: 21300000, guid: 9c2fee61db9cf9c45a190e8bb1dda622, type: 3}
+  - {fileID: 21300000, guid: d5b968d2fb6edc743af291ebc7915688, type: 3}
+  - {fileID: 21300000, guid: 38213c4366f57734e99f4582dd701863, type: 3}
+  - {fileID: 21300000, guid: f582c183f4af88740a8fea76d439aae9, type: 3}
+  - {fileID: 21300000, guid: 28aed0548aaec6b48b6dfdaa7730ba91, type: 3}
+  - {fileID: 21300000, guid: 4232d284295fce849b937bf962b84bee, type: 3}
+  - {fileID: 21300000, guid: a6133d4805a93cf498df7b951fe3bb4d, type: 3}
+  - {fileID: 21300000, guid: 3fad63587a256344b953be02977548e5, type: 3}
+  - {fileID: 21300000, guid: 6eef4c19f8023bb4f8e21bc126b0ec51, type: 3}
+  - {fileID: 21300000, guid: 2b567399c84ee4044898c4ecc9bbf920, type: 3}
+  - {fileID: 21300000, guid: dc2dc399fc15bdd4399f43628b051013, type: 3}
+  - {fileID: 21300000, guid: 0ce2b3a95a3962648bb8dcc76f6ecfb5, type: 3}
+  - {fileID: 21300000, guid: b624937a9dee9934197587bfc4bfdda6, type: 3}
+  - {fileID: 21300000, guid: d97644badf536834fb3967d8068479d6, type: 3}
+  - {fileID: 21300000, guid: 1fc2cafb3ee04b94c8566364924a7623, type: 3}
+  - {fileID: 21300000, guid: 9fb57ebd9a70399439f75a8820ea28d9, type: 3}
+  - {fileID: 21300000, guid: 5fc50ced685d0cd44a1ca677c8b51484, type: 3}
+  - {fileID: 21300000, guid: 5833c19fc6592e9409a9aa49fce22aac, type: 3}
+  - {fileID: 21300000, guid: 52f0b0df4abe9df468f11e33e853eb78, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - queen_of_spades
+  - 10_of_hearts
+  - 10_of_clubs
+  - 10_of_diamonds
+  - king_of_hearts
+  - king_of_clubs
+  - jack_of_diamonds
+  - ace_of_hearts
+  - queen_of_hearts
+  - ace_of_diamonds
+  - 10_of_spades
+  - jack_of_spades
+  - jack_of_hearts
+  - king_of_diamonds
+  - jack_of_clubs
+  - cardBack
+  - queen_of_diamonds
+  - queen_of_clubs
+  - king_of_spades
+  - ace_of_clubs
+  - ace_of_spades
+  m_Tag: MasterAtlas
+  m_IsVariant: 0
