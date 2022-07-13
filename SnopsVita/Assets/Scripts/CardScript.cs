@@ -18,7 +18,7 @@ public class CardScript : MonoBehaviour
     private bool tempJeObrnjeno;
     [Header("Povezave na objekte")]
     public SpriteAtlas atlasKart;
-    public Animator m_Animator;
+    //public Animator m_Animator;
     private SpriteRenderer CardSprite;
     private Transform cardTransform;
     private Vector2 staraPozicija;
@@ -42,6 +42,7 @@ public class CardScript : MonoBehaviour
     }
     private void Awake()
     {
+
         atlasKart = Resources.Load<SpriteAtlas>("CardsSpriteAtlas/" + PlayerPrefs.GetString("izbranSkinKart") + "/MasterAtlas");
     }
     // Start is called before the first frame update
@@ -55,32 +56,12 @@ public class CardScript : MonoBehaviour
         SpremeniFaceKarte();
         //CardSprite.sprite= Resources.Load<Sprite>("Cards/"+ PlayerPrefs.GetString("izbranSkinKart") + "/"+ime+"_of_"+simbol);
     }
-    /*IEnumerator obrniKartoIE(){
-        float speed = 0.01f;
-        float timeCount = 0.0f;
-        bool af = false;
-
-        Transform from = gameObject.transform;
-    Transform to = gameObject.transform;
-    to.rotation.y=90f;
-        while (!af) { 
-            gameObject.transform.rotation = Quaternion.Lerp(from.rotation, to.rotation, timeCount * speed);
-            timeCount = timeCount + Time.deltaTime;
-            //gameObject.transform.rotation = Quaternion.Lerp(gameObject.transform.rotation, noviRotation, animTime * Time.deltaTime);
-            //Debug.Log(gameObject.transform.position.x);
-            //Debug.Log(noviKord.x);
-            //if (gameObject.transform.position.x >= noviKord.x + 0.01f)
-            if(gameObject.transform.rotation.y==90f) af=true;
-        }
-        //obrniKarto();
-    }*/
     
     public void obrniKarto()
     {
         if (tempJeObrnjeno != jeObrnjeno) {
             tempJeObrnjeno = jeObrnjeno;
             //m_Animator.SetTrigger("NaObrniKarto");
-            //StartCoroutine(obrniKartoIE);
             SpremeniFaceKarte();
         }
     }
@@ -112,11 +93,12 @@ public class CardScript : MonoBehaviour
 
     IEnumerator PredvajajAnimPremikKarte(Vector3 noviKord2, Quaternion rotation)
     {
+        float razdalja;
         while (!animFinished)
         {
             gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, noviKord2, animTime * Time.deltaTime);
             //gameObject.transform.rotation = Quaternion.Lerp(gameObject.transform.rotation, noviRotation, 5 * Time.deltaTime);
-            float razdalja = Vector3.Distance(noviKord2, gameObject.transform.position);
+            razdalja = Vector3.Distance(noviKord2, gameObject.transform.position);
             if (razdalja <= 0.01)
             {
                 animFinished = true;

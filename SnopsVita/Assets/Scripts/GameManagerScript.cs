@@ -663,7 +663,7 @@ public class GameManagerScript : MonoBehaviour
         dovoliInput();
         CardScript ks = pridobiScriptKarte(deck.karte[0]);
         ks.jeObrnjeno = true;
-        ks.m_Animator.SetTrigger("OnCloseDeck");
+        //ks.m_Animator.SetTrigger("OnCloseDeck");
 
         tipIgre = TipIgre.zaprtAdut;
         stIgralcaKiSpila = stTrenutnegaIgralca;

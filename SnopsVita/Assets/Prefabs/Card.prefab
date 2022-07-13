@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4302973909771150}
   - component: {fileID: 212458984373973762}
   - component: {fileID: 114809877442048980}
-  - component: {fileID: 95095376510924382}
   - component: {fileID: 61556712104301054}
   m_Layer: 0
   m_Name: Card
@@ -68,24 +67,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 7.26}
   m_EdgeRadius: 0
---- !u!95 &95095376510924382
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1430470302164412}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0ff5a2f1aa36ecf49896c883cfaa9a7c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114809877442048980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,7 +86,6 @@ MonoBehaviour:
   lahkoPremikas: 0
   atlasKart: {fileID: 4343727234628468602, guid: e65028bdb75d1ed41a784e26148ba50c,
     type: 2}
-  m_Animator: {fileID: 95095376510924382}
   GameManager: {fileID: 0}
   animTime: 10
   noviKord: {x: 0, y: 0, z: 0}

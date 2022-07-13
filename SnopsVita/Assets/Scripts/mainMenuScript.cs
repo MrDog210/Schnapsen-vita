@@ -7,12 +7,12 @@ using TMPro;
 
 public class mainMenuScript : MonoBehaviour
 {
-    public GameObject skinSelectorParent;
     public AudioMixer MasterMixer;
     public Slider MasterVolSlider;
     public Slider MusicVolSlider;
     public Slider SFXVolSlider;
     public TMP_Dropdown FpsLockDropdown;
+    public TMP_Dropdown SkinDropdown;
     //public InterstitialAdExample ads = new InterstitialAdExample();
     public TMP_Text VersionNum;
     private const string RegisterUrl = "https://www.schnapsen66.eu/index.php?r=site%2Fsignup";
@@ -64,10 +64,19 @@ public class mainMenuScript : MonoBehaviour
         //LoginErrorMSG.text = "";
         Input.multiTouchEnabled = false;
 
-        if (!PlayerPrefs.HasKey("izbranSkinKart"))
+        /*if (!PlayerPrefs.HasKey("izbranSkinKart"))
         {
             PlayerPrefs.SetString("izbranSkinKart", "Skin01");
+        }*/
+        if (!PlayerPrefs.HasKey("izbranSkinKart2"))
+        {
+            PlayerPrefs.SetString("izbranSkinKart", "Skin01");
+            PlayerPrefs.SetInt("izbranSkinKart2", 0);
         }
+
+
+
+
         if (!PlayerPrefs.HasKey("MasterVol"))
         {
             PlayerPrefs.SetFloat("MasterVol", 1f);
@@ -121,11 +130,12 @@ public class mainMenuScript : MonoBehaviour
 
 
         //izberi pravo vrednost v skin selectorju
-        GameObject.Find(PlayerPrefs.GetString("izbranSkinKart")).GetComponent<Toggle>().isOn = true;
+        //GameObject.Find(PlayerPrefs.GetString("izbranSkinKart")).GetComponent<Toggle>().isOn = true;
         MasterVolSlider.value = PlayerPrefs.GetFloat("MasterVol");
         MusicVolSlider.value = PlayerPrefs.GetFloat("MusicVol");
         SFXVolSlider.value = PlayerPrefs.GetFloat("SFXVol");
         FpsLockDropdown.value = PlayerPrefs.GetInt("FPSLock");
+        SkinDropdown.value = PlayerPrefs.GetInt("izbranSkinKart2");
         VersionNum.text = "Version: " + Application.version;
     }
     public void spremeniIzbranSkin(string imeSkina)
@@ -165,6 +175,24 @@ public class mainMenuScript : MonoBehaviour
                 break;
             case 2:
                 Application.targetFrameRate = 120;
+                break;
+        }
+    }
+
+    public void SetCardSkin(int id)
+    {
+        PlayerPrefs.SetInt("izbranSkinKart2", id);
+        Debug.Log(id);
+        switch (id)
+        {
+            case 0:
+                PlayerPrefs.SetString("izbranSkinKart", "Skin01");
+                break;
+            case 1:
+                PlayerPrefs.SetString("izbranSkinKart", "mobileFriendly");
+                break;
+            case 2:
+                PlayerPrefs.SetString("izbranSkinKart", "VintageCards");
                 break;
         }
     }
